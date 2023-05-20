@@ -1,0 +1,1 @@
+pytest -v -n=4 --html=Report/sanitytest.html -m sanity
