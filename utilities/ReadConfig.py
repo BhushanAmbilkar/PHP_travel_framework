@@ -1,8 +1,7 @@
 import configparser
 
 config = configparser.RawConfigParser()
-config.read("D:\\Credence Class Notes\\CredenceBatches\\CredenceBatch#13\\PhpTravel"
-            "\\Configuration\\config.ini")
+config.read("F:\\05.FrameWork\\MZR\\PHP_Travel\\PhpTravel\\Configuration\\config.ini")
 
 
 class Readconfig:

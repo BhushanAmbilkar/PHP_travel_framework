@@ -48,7 +48,6 @@ class LoginPage:
             pass
 
 
-
     def Title(self):
         wait = WebDriverWait(self.driver, 5)
         try:

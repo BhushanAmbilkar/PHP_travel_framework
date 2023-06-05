@@ -15,7 +15,7 @@ from utilities.ReadConfig import Readconfig
 class Test_Login_DDT:
     url = Readconfig.URL()
     log = LogGenerator.loggen()
-    path = "D:\\Credence Class Notes\\CredenceBatches\\CredenceBatch#13\PhpTravel\\testCases\\TestData\\LoginData.xlsx"
+    path = "F:\\05.FrameWork\\MZR\\PHP_Travel\\PhpTravel\\testCases\\TestData\\LoginData.xlsx"
 
     @pytest.mark.regression
     def test_login_ddt_04(self, setup):
@@ -49,7 +49,7 @@ class Test_Login_DDT:
                     self.lp.ClickMenu()
                     self.log.info("Clicking Menu Button")
                     self.driver.save_screenshot(
-                        "D:\\Credence Class Notes\\CredenceBatches\\CredenceBatch#13\\PhpTravel\\Screenshots"
+                        "F:\\05.FrameWork\\MZR\\PHP_Travel\\PhpTravel\\Screenshots"
                         "\\" + self.Email + self.Password + "test_login_Params_003_pass.PNG")
                     # time.sleep(2)
                     self.lp.ClickLogout()
@@ -62,8 +62,8 @@ class Test_Login_DDT:
                     self.lp.ClickMenu()
                     self.log.info("Clicking Menu Button")
                     self.driver.save_screenshot(
-                        "D:\\Credence Class Notes\\CredenceBatches\\CredenceBatch#13\\PhpTravel\\Screenshots"
-                        "\\" + self.Email + self.Password  + "test_login_Params_003_fail.PNG")
+                        "F:\\05.FrameWork\\MZR\\PHP_Travel\\PhpTravel\\Screenshots"
+                        "\\" + self.Email + self.Password + "test_login_Params_003_fail.PNG")
                     # time.sleep(2)
                     self.lp.ClickLogout()
                     self.log.info("Clicking Logout Button")
@@ -74,16 +74,16 @@ class Test_Login_DDT:
                 if self.exp_result == "Pass":
                     self.log.info("Page Title -->" + self.driver.title)
                     self.driver.save_screenshot(
-                        "D:\\Credence Class Notes\\CredenceBatches\\CredenceBatch#13\\PhpTravel\\Screenshots"
-                        "\\" + self.Email + self.Password  + "test_login_Params_003_fail.PNG")
+                        "F:\\05.FrameWork\\MZR\\PHP_Travel\\PhpTravel\\Screenshots"
+                        "\\" + self.Email + self.Password + "test_login_Params_003_fail.PNG")
                     statusList.append("Fail")
                     XLutils.WriteData(self.path, "Sheet1", r, 5, "Fail")
 
                 elif self.exp_result == "Fail":
                     self.log.info("Page Title -->" + self.driver.title)
                     self.driver.save_screenshot(
-                        "D:\\Credence Class Notes\\CredenceBatches\\CredenceBatch#13\\PhpTravel\\Screenshots"
-                        "\\" + self.Email + self.Password  + "test_login_Params_003_pass.PNG")
+                        "F:\\05.FrameWork\\MZR\\PHP_Travel\\PhpTravel\\Screenshots"
+                        "\\" + self.Email + self.Password + "test_login_Params_003_pass.PNG")
                     statusList.append("Pass")
                     XLutils.WriteData(self.path, "Sheet1", r, 5, "Pass")
         print(statusList)

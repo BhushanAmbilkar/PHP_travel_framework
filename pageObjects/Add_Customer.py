@@ -73,9 +73,12 @@ class AddCustomer:
     def Enter_MobileNumber(self, mobilenumber):
         self.driver.find_element(*AddCustomer.Text_MobileNumber_XPATH).send_keys(mobilenumber)
 
-    def DropDown_Country(self, country):
-        Country = Select(self.driver.find_element(*AddCustomer.DropDown_Country_XPATH))
-        Country.select_by_index(2)
+    def DropDown_Country(self, index):
+        country = self.driver.find_element(*AddCustomer.DropDown_Country_XPATH)
+        dropdown = Select(country)
+        dropdown.select_by_index(index)
+        # Country = Select(self.driver.find_element(*AddCustomer.DropDown_Country_XPATH))
+        # Country.select_by_index(2)
 
     def Enter_Address1(self, address1):
         self.driver.find_element(*AddCustomer.Text_address1_XPATH).send_keys(address1)

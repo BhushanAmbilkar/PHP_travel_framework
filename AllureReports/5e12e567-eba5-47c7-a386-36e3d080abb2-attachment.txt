@@ -1,0 +1,6 @@
+[32mINFO    [0m Test_Login:test_login.py:25 test_page_title_001 is started
+[32mINFO    [0m Test_Login:test_login.py:27 Opening Browser
+[32mINFO    [0m Test_Login:test_login.py:30 Going to Url -->https://phptravels.net/api/admin
+[32mINFO    [0m Test_Login:test_login.py:32 Page Title -->Administator Login
+[32mINFO    [0m Test_Login:test_login.py:37 test_page_title_001 is Passed
+[32mINFO    [0m Test_Login:test_login.py:45 test_page_title_001 is Completed

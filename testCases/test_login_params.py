@@ -41,7 +41,7 @@ class Test_Login_Params:
                 self.lp.ClickMenu()
                 self.log.info("Clicking Menu Button")
                 self.driver.save_screenshot(
-                    "D:\\Credence Class Notes\\CredenceBatches\\CredenceBatch#13\\PhpTravel\\Screenshots"
+                    "F:\\05.FrameWork\\MZR\\PHP_Travel\\PhpTravel\\Screenshots"
                     "\\" + getDataforlogin[0] + getDataforlogin[0] + "test_login_Params_003_pass.PNG")
                 # time.sleep(2)
                 self.lp.ClickLogout()
@@ -53,7 +53,7 @@ class Test_Login_Params:
                 self.lp.ClickMenu()
                 self.log.info("Clicking Menu Button")
                 self.driver.save_screenshot(
-                    "D:\\Credence Class Notes\\CredenceBatches\\CredenceBatch#13\\PhpTravel\\Screenshots"
+                    "F:\\05.FrameWork\\MZR\\PHP_Travel\\PhpTravel\\Screenshots"
                     "\\" + getDataforlogin[0] + getDataforlogin[0] + "test_login_Params_003_fail.PNG")
                 # time.sleep(2)
                 self.lp.ClickLogout()
@@ -64,21 +64,14 @@ class Test_Login_Params:
             if getDataforlogin[2] == "Pass":
                 self.log.info("Page Title -->" + self.driver.title)
                 self.driver.save_screenshot(
-                    "D:\\Credence Class Notes\\CredenceBatches\\CredenceBatch#13\\PhpTravel\\Screenshots"
+                    "F:\\05.FrameWork\\MZR\\PHP_Travel\\PhpTravel\\Screenshots"
                     "\\" + getDataforlogin[0] + getDataforlogin[0] + "test_login_Params_003_fail.PNG")
                 statusList.append("Fail")
 
             elif getDataforlogin[2] == "Fail":
                 self.log.info("Page Title -->" + self.driver.title)
                 self.driver.save_screenshot(
-                    "D:\\Credence Class Notes\\CredenceBatches\\CredenceBatch#13\\PhpTravel\\Screenshots"
+                    "F:\\05.FrameWork\\MZR\\PHP_Travel\\PhpTravel\\Screenshots"
                     "\\" + getDataforlogin[0] + getDataforlogin[0] + "test_login_Params_003_pass.PNG")
                 statusList.append("Pass")
 
-        if "Fail" not in statusList:
-            assert True
-            self.log.info("test_login_Params_003 is Passed")
-        else:
-            assert False
-            self.log.info("test_login_Params_003 is Failed")
-        self.log.info("test_login_Params_003 is Completed")

@@ -1,0 +1,11 @@
+[32mINFO    [0m Test_Login:test_login.py:55 test_login_002 is started
+[32mINFO    [0m Test_Login:test_login.py:57 Opening Browser
+[32mINFO    [0m Test_Login:test_login.py:60 Going to Url -->https://phptravels.net/api/admin
+[32mINFO    [0m Test_Login:test_login.py:63 Entering Email-->admin@phptravels.com
+[32mINFO    [0m Test_Login:test_login.py:65 Entering Password-->demoadmin
+[32mINFO    [0m Test_Login:test_login.py:67 Clicking Login
+[32mINFO    [0m Test_Login:test_login.py:70 Page Title -->Dashboard
+[32mINFO    [0m Test_Login:test_login.py:72 Clicking Menu Button
+[32mINFO    [0m Test_Login:test_login.py:81 Clicking Logout Button
+[32mINFO    [0m Test_Login:test_login.py:83 test_login_002 is Passed
+[32mINFO    [0m Test_Login:test_login.py:91 test_login_002 is Completed
